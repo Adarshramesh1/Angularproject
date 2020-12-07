@@ -1,0 +1,11 @@
+
+<div *ngIf="flag">
+    <h1>{{error}}</h1>
+</div>
+<form #user="ngForm"(ngSubmit)="loguser(user.value)">
+<input type="text"placeholder="username"name="name"ngModel><br>
+<input type="text"placeholder="password"name="password"ngModel><br>
+<input type="submit"value="submit">
+</form>
+<a routerLink="/register">New user? click here to register</a>
+

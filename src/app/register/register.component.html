@@ -1,0 +1,9 @@
+<h1 style="text-align:center;">Registration</h1>
+<form  #user="ngForm" (ngSubmit)="reguser(user.value)"  style="margin-left:100px; ">
+    Id:<input type="number" name="id" style="margin-left:50px; " ngModel><br><br>
+    Name :<input type="text" name="name" style="margin-left:50px;" ngModel><br><br>
+    Username:<input type="text" name="username"  style="margin-left:75px;" ngModel><br><br>
+    Password :<input type="password" name="password" style="margin-left:55px;" ngModel><br><br>
+    Salary:<input type="number" name="salary" style="margin-left:95px;" ngModel><br><br>
+    <input type="submit" name="submit" style="margin-left:150px;">
+</form>
